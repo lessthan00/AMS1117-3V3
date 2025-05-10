@@ -725,7 +725,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_Diode_TVS_AKL:SMAJ12CA"
+		(symbol "PCM_Diode_TVS_AKL:SMAJ18CA"
 			(pin_numbers
 				(hide yes)
 			)
@@ -744,7 +744,7 @@
 					)
 				)
 			)
-			(property "Value" "SMAJ12CA"
+			(property "Value" "SMAJ18CA"
 				(at 0 2.54 0)
 				(effects
 					(font
@@ -770,7 +770,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "SMA Bidirectional TVS Diode, 12V, 400W, Alternate KiCAD Library"
+			(property "Description" "SMA Bidirectional TVS Diode, 18V, 400W, Alternate KiCAD Library"
 				(at 0 0 0)
 				(effects
 					(font
@@ -797,7 +797,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SMAJ12CA_0_1"
+			(symbol "SMAJ18CA_0_1"
 				(polyline
 					(pts
 						(xy 0 1.27) (xy 0 -1.27)
@@ -871,7 +871,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ12CA_0_2"
+			(symbol "SMAJ18CA_0_2"
 				(polyline
 					(pts
 						(xy -3.81 -3.81) (xy 3.81 3.81)
@@ -945,7 +945,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ12CA_1_1"
+			(symbol "SMAJ18CA_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -983,7 +983,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ12CA_1_2"
+			(symbol "SMAJ18CA_1_2"
 				(pin passive line
 					(at -3.81 -3.81 0)
 					(length 0)
@@ -1513,6 +1513,12 @@
 		)
 	)
 	(junction
+		(at 33.02 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0be56c7b-0e81-41e7-a7cf-9b4a729366bb")
+	)
+	(junction
 		(at 81.28 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1523,12 +1529,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "514833eb-50a9-44fe-916f-294371287c75")
-	)
-	(junction
-		(at 33.02 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "548de5e2-09b7-460b-95a2-d11cc7c57852")
 	)
 	(junction
 		(at 107.95 41.91)
@@ -1779,76 +1779,6 @@
 		(uuid "f9714cac-ff9a-4506-b933-dec29543c863")
 	)
 	(symbol
-		(lib_id "PCM_Diode_TVS_AKL:SMAJ12CA")
-		(at 33.02 46.99 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1db13489-a9e5-49cc-8172-8d3a80cafccf")
-		(property "Reference" "D1"
-			(at 35.56 45.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMAJ12CA"
-			(at 35.56 48.2599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "PCM_Diode_SMD_AKL:D_SMA_TVS"
-			(at 33.02 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.tme.eu/Document/dbc72d81c249fe51b6ab42300e8e06d0/SMAJ_ser.pdf"
-			(at 33.02 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SMA Bidirectional TVS Diode, 12V, 400W, Alternate KiCAD Library"
-			(at 33.02 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7002ac7f-c6b0-40c8-92a7-8335726e15cc")
-		)
-		(pin "2"
-			(uuid "3ae000d1-bf52-4a0b-80e5-80df7edd264a")
-		)
-		(instances
-			(project ""
-				(path "/1df6ae02-d3d4-4e02-9ae3-4242eafe4dc1"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_Capacitor_US_AKL:C_1206")
 		(at 107.95 48.26 0)
 		(unit 1)
@@ -1913,6 +1843,76 @@
 			(project "HT7333"
 				(path "/1df6ae02-d3d4-4e02-9ae3-4242eafe4dc1"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_TVS_AKL:SMAJ18CA")
+		(at 33.02 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "252aeada-fc9b-4dea-a27a-342105ca6c85")
+		(property "Reference" "D1"
+			(at 35.56 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMAJ18CA"
+			(at 35.56 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SMA_TVS"
+			(at 33.02 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/dbc72d81c249fe51b6ab42300e8e06d0/SMAJ_ser.pdf"
+			(at 33.02 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMA Bidirectional TVS Diode, 18V, 400W, Alternate KiCAD Library"
+			(at 33.02 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c677eaff-a3c7-4b73-92e2-6ec25fb7f886")
+		)
+		(pin "2"
+			(uuid "0b01671d-5c5e-4565-8820-de7af6f868f8")
+		)
+		(instances
+			(project ""
+				(path "/1df6ae02-d3d4-4e02-9ae3-4242eafe4dc1"
+					(reference "D1")
 					(unit 1)
 				)
 			)
